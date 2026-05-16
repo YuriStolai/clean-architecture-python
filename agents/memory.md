@@ -135,12 +135,16 @@ Why:
 
 What:
 - `AGENTS.md` now requires every committed change to be reflected in this file.
+- `AGENTS.md` now instructs agents to read this file at the start of each new
+  session before doing other repository work.
 - Each relevant entry should explain what was changed and why the change was
   made.
 
 Why:
 - Agents should be able to recover project context quickly from inside the
   repository.
+- Reading this file first gives each new session an immediate baseline context
+  before deeper inspection begins.
 - This file is intended to reduce repeated discovery work and preserve the
   reasoning behind important changes.
 

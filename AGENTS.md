@@ -141,6 +141,8 @@ Commits in this repository must follow these rules:
 
 Every committed change must also be reflected in `agents/memory.md`.
 
+- At the start of each new session, read `agents/memory.md` before doing other
+  repository work so you begin with the latest project context.
 - Treat `agents/memory.md` as a context file for future agents, not as a
   commit-by-commit changelog.
 - Organize entries around implemented features, repository capabilities,
