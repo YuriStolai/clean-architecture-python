@@ -134,6 +134,22 @@ Commits in this repository must follow these rules:
 - Avoid single large commits that bundle many unrelated files or concerns.
 - Keep the body descriptive and no longer than 100 characters.
 
+## Memory File
+
+Every committed change must also be reflected in `agents/memory.md`.
+
+- Treat `agents/memory.md` as a context file for future agents, not as a
+  commit-by-commit changelog.
+- Organize entries around implemented features, repository capabilities,
+  working rules, and important decisions.
+- Add a short summary of what was changed.
+- Add a short explanation of why the change was made.
+- Update the file whenever a committed change materially affects architecture,
+  contributor workflow, repository conventions, or implemented behavior.
+- Keep the file updated as part of the same delivery context so the project
+  history remains understandable from inside the repository without requiring a
+  full repository survey.
+
 The goal is not to mimic the book mechanically. The goal is to learn the
 architecture by building, observing pressure points, and improving the design
 without losing conceptual integrity.
