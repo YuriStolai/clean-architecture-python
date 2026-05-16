@@ -117,6 +117,9 @@ Agents contributing here should follow these defaults:
 - Prefer reversible refactors over broad rewrites.
 - Do not invent package structure that the code does not need yet.
 - When adding infrastructure code, keep the seam with inner layers explicit.
+- Write generated content in English, including documentation, comments,
+  commit messages, and contributor-facing text, unless the repository later
+  defines an explicit exception.
 - If a change intentionally violates Clean Architecture for now, say so clearly
   in the final report and limit the violation to one place.
 - Do not create commits automatically after making changes.

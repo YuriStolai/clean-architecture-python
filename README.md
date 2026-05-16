@@ -5,6 +5,12 @@ Python while studying Robert C. Martin's ideas. The structure is expected to
 evolve as the project grows and the architectural understanding becomes more
 concrete.
 
+## Content Language
+
+Generated content in this repository should be written in English. This
+includes documentation, comments, commit messages, and contributor-facing
+text, unless a future repository rule explicitly states otherwise.
+
 ## Commit Guidelines
 
 When you create commits in this repository, follow these rules:

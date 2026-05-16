@@ -73,12 +73,23 @@ What:
 - `README.md` includes a short explanation of the common prefixes `feat`,
   `fix`, `refactor`, `test`, `docs`, and `chore`.
 - `README.md` includes an example of the expected commit message structure.
+- `docs/poetry/cheat-sheet.md` was added as the initial focused documentation
+  subtree for Poetry day-to-day usage.
+- The Poetry cheat sheet includes common commands for installation,
+  dependency management, lockfile handling, environment inspection, and IDE
+  interpreter discovery.
+- `README.md` and `AGENTS.md` now explicitly require generated repository
+  content to be written in English.
 
 Why:
 - Human contributors need direct, instructional guidance in the main project
   documentation, not only in `AGENTS.md`.
 - This makes contribution rules visible without requiring contributors to infer
   them from the Git history.
+- A dedicated `docs/` subtree keeps operational references organized as the
+  repository grows.
+- The explicit language rule prevents mixed-language documentation and keeps
+  generated content consistent.
 
 ## Repository Hygiene
 
