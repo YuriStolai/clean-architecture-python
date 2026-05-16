@@ -46,6 +46,26 @@ Why:
 - This reduces the risk of placing business logic in framework code or creating
   structure that is more ceremonial than useful.
 
+## Domain Structure
+
+What:
+- `src/domain/` was introduced as the first explicit architecture package.
+- The domain layer is currently organized by business concept, with initial
+  `customer` and `order` packages.
+- Each concept package starts with focused modules such as `entity.py`,
+  `value_objects.py`, `services.py`, and `exceptions.py` only where relevant.
+- `src/domain/README.md` documents how new domain concepts should be added.
+- `tests/test_domain_structure.py` verifies that the initial domain packages
+  can be imported without framework or infrastructure setup.
+
+Why:
+- The project now has a concrete place for business rules before application
+  and infrastructure layers are introduced.
+- Grouping by concept keeps related rules together and avoids a flat
+  technology-oriented domain package.
+- The structure remains small and easy to refactor as the real business model
+  becomes clearer.
+
 ## Commit Conventions
 
 What:
