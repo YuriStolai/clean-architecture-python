@@ -95,9 +95,13 @@ What:
 - `README.md` includes an example of the expected commit message structure.
 - `docs/poetry/cheat-sheet.md` was added as the initial focused documentation
   subtree for Poetry day-to-day usage.
+- `docs/testing/cheat-sheet.md` was added as a focused reference for running and
+  narrowing tests with `unittest` and Poetry.
 - The Poetry cheat sheet includes common commands for installation,
   dependency management, lockfile handling, environment inspection, and IDE
   interpreter discovery.
+- The test cheat sheet includes commands for full-suite runs, targeted module
+  runs, single test methods, and useful `unittest` flags.
 - `README.md` and `AGENTS.md` now explicitly require generated repository
   content to be written in English.
 
