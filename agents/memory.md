@@ -93,6 +93,19 @@ Why:
 - This keeps the versioned content focused on source, tests, and meaningful
   documentation.
 
+## Poetry Configuration
+
+What:
+- `pyproject.toml` now sets `tool.poetry.package-mode = false`.
+- `poetry.lock` was added even though the project currently has no runtime
+  dependencies.
+
+Why:
+- The repository is currently used as a learning workspace, not as a Python
+  package to be built and published.
+- Disabling package mode keeps Poetry aligned with that workflow while still
+  allowing dependency locking and reproducible environment setup.
+
 ## Git Identity and History Normalization
 
 What:
