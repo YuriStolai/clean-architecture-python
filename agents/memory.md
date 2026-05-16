@@ -108,6 +108,8 @@ Why:
 
 What:
 - `pyproject.toml` now sets `tool.poetry.package-mode = false`.
+- The explicit `tool.poetry.packages` entry was removed after the package
+  directory under `src/` was flattened away.
 - `poetry.lock` was added even though the project currently has no runtime
   dependencies.
 
@@ -116,6 +118,9 @@ Why:
   package to be built and published.
 - Disabling package mode keeps Poetry aligned with that workflow while still
   allowing dependency locking and reproducible environment setup.
+- Removing the stale package include keeps Poetry configuration aligned with
+  the current source layout and avoids references to a non-existent package
+  path.
 
 ## Git Identity and History Normalization
 

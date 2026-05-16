@@ -11,7 +11,6 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "clean_architecture_python", from = "src"}]
 package-mode = false
 
 [build-system]
