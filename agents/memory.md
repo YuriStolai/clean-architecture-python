@@ -165,6 +165,21 @@ Why:
   the current source layout and avoids references to a non-existent package
   path.
 
+## Development Commands
+
+What:
+- A root `Makefile` provides commands for initial setup, dependency
+  installation, tests, project checks, Poetry environment inspection, lockfile
+  refresh, and cache cleanup.
+- `make help` is the default target and documents the available commands.
+- `README.md` documents the prerequisites and Make-based development workflow.
+
+Why:
+- Contributors now have a small, consistent command interface over Poetry and
+  `unittest` without needing to remember their full command lines.
+- The setup target validates Poetry configuration before installing locked
+  dependencies, which catches configuration problems early.
+
 ## Git Identity and History Normalization
 
 What:

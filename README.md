@@ -11,6 +11,28 @@ Generated content in this repository should be written in English. This
 includes documentation, comments, commit messages, and contributor-facing
 text, unless a future repository rule explicitly states otherwise.
 
+## Initial Setup
+
+The project requires Python 3.14 or newer, Poetry, and Make. Run the initial
+setup from the repository root:
+
+```bash
+make setup
+```
+
+Common development commands:
+
+```bash
+make test
+make test-verbose
+make check
+make env-info
+make clean
+```
+
+Run `make help` to see the complete command list. The Make targets wrap Poetry
+commands so contributors use the project-managed environment consistently.
+
 ## Commit Guidelines
 
 When you create commits in this repository, follow these rules:
