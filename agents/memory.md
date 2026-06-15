@@ -66,6 +66,25 @@ Why:
 - The structure remains small and easy to refactor as the real business model
   becomes clearer.
 
+## Customer Domain
+
+What:
+- The customer concept now includes `CustomerId`, `CustomerName`, and
+  `CustomerEmail` value objects with identifier generation, name validation,
+  and email normalization.
+- `CustomerModel` holds customer state while functions in `entity.py` implement
+  registration, renaming, email changes, activation, and deactivation.
+- Customer-specific exceptions represent invalid values and repeated status
+  transitions.
+- The customer package exports its public domain API, and focused tests cover
+  value-object invariants and customer state transitions.
+
+Why:
+- The project now has its first executable business rules in the domain layer,
+  independent of frameworks and infrastructure.
+- Separating state from domain operations makes the current learning design
+  explicit while keeping it easy to refactor as the model evolves.
+
 ## Commit Conventions
 
 What:

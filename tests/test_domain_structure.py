@@ -20,6 +20,7 @@ class DomainStructureTestCase(unittest.TestCase):
         module_names = (
             "domain",
             "domain.customer",
+            "domain.customer.model",
             "domain.customer.entity",
             "domain.customer.value_objects",
             "domain.customer.exceptions",
